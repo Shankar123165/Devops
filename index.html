@@ -1,24 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bengalore Jobs</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Clone</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eef2f5;
+}
+
+/* Header */
+
+header{
+    background:#9de8ef;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:green;
+    font-size:42px;
+    font-weight:bold;
+}
+
+.cart{
+    font-size:32px;
+    color:gold;
+    cursor:pointer;
+}
+
+/* Products */
+
+.products{
+    padding:30px;
+}
+
+.products h2{
+    margin-bottom:25px;
+    font-size:36px;
+}
+
+.product-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+/* Card */
+
+.card{
+    width:240px;
+    background:#fff;
+    border-radius:10px;
+    padding:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    color:#555;
+    margin-bottom:18px;
+}
+
+.card a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#2874f0;
+    padding:10px 18px;
+    border-radius:5px;
+}
+
+.card a:hover{
+    background:#0b5ed7;
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Sai Prakash Classes</h1>
-        <p class="subtitle">Shiva From Gorantla</p>
+<header>
 
-        <p>
-            Learn Linux, Git, Docker, Kubernetes, Jenkins, AWS,
-            CI/CD Pipelines, Terraform, and much more.
-        </p>
+<div class="logo">Flipkart</div>
 
-        <button>Start Learning</button>
-    </div>
+<div class="cart">
+<i class="fa-solid fa-cart-shopping"></i>
+</div>
+
+</header>
+
+<section class="products">
+
+<h2>All Products</h2>
+
+<div class="product-container">
+
+<div class="card">
+<img src="images/tshirt.jpg" alt="">
+<h3>T-Shirt</h3>
+<p>Rs/-199.23</p>
+<a href="#">View Product</a>
+</div>
+
+<div class="card">
+<img src="images/shoes.jpg" alt="">
+<h3>Sneakers</h3>
+<p>Rs/-430.99</p>
+<a href="#">View Product</a>
+</div>
+
+<div class="card">
+<img src="images/bag.jpg" alt="">
+<h3>Backpack</h3>
+<p>Rs/-270.99</p>
+<a href="#">View Product</a>
+</div>
+
+<div class="card">
+<img src="images/phone.jpg" alt="">
+<h3>Smartphone</h3>
+<p>Rs/-10000</p>
+<a href="#">View Product</a>
+</div>
+
+<div class="card">
+<img src="images/laptop.jpg" alt="">
+<h3>Laptop</h3>
+<p>Rs/-50000</p>
+<a href="#">View Product</a>
+</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
